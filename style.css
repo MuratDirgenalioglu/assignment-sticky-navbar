@@ -1,9 +1,40 @@
-body
-{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     padding-left: 17rem;
     margin: 0;
 }
-nav{
+
+h2 {
+    font-size: 3rem;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0rem;
+    font-size: 1.5rem;
+}
+
+h4,
+p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+span,
+a {
+    color: #be5d38;
+}
+
+/* Navigation CSS */
+nav {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -15,39 +46,30 @@ nav{
     background-color: #be5d38;
     width: 17rem;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    padding: 20px;
+    padding: 2rem;
     color: #e3b6a7;
 }
-nav a:hover{
+
+nav a:hover {
     color: #fff;
-
 }
-nav ul{
-    padding: 5px;
 
+nav ul {
+    padding: 1rem;
 }
-nav li{
+
+nav li {
     list-style-type: none;
-    padding: 15px;
+    padding: 1rem;
     letter-spacing: 0.05rem;
-    font-weight: 800;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-section {
-    height: 100vh;
-    margin: 10rem;
-    margin-right: 200px;
-}
-nav img{
+
+nav img {
     border-style: solid;
     border-color: #cc7e61;
     border-width: 10px;
@@ -55,58 +77,85 @@ nav img{
     width: 160px;
     height: 160px;
 }
-.name{
-    font-size: 2.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+/* Main CSS */
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-#about h1,h2,span,a{
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 3rem;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    margin-right: 1.3rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #6c757d;
+}
+
+.name h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 4.5rem;
+}
+
+.address {
+    margin-bottom: 2.5rem;
     text-transform: uppercase;
 }
-#about span,a{
-    color: #be5d38;
-}
-#about h2{
+
+#about h2 {
     display: contents;
     font-size: 1.2rem;
     color: #6c757d;
 }
-#experience h2{
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
-.s2{
+
+.section-description {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
 }
-.s2d{
-    margin-left: 20rem;
+
+.section-date {
+    text-align: right;
+    font-size: 1.2rem !important;
+    min-width: 15rem;
 }
-#experience h3,h4{
-    text-transform: uppercase;
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
 }
-.s2 span{
-    color: #be5d38;
-    text-transform: none;
-}
-#experience h4,p{
+
+#skills ul li span {
+    padding-left: 0.5rem;
     color: #6c757d;
 }
-.s3{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3rem;
+
+#awards ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
 }
-#education h3,h4{
-    text-transform: uppercase;
+
+#awards ul i {
+    color: gold;
+    padding-top: 0.7rem;
 }
-.s3 span{
-    color: #be5d38;
-    text-transform: none;
-}
-#education h4,p{
+
+#awards ul li span {
+    padding-left: 0.5rem;
     color: #6c757d;
-}
-hr {
-    border-top: 3px solid #bbb
 }
